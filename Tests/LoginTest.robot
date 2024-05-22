@@ -17,7 +17,6 @@ Successful Login
     [Documentation]     This test case verifies that the user is able to successfully Login to Jira Software
     [Tags]      Smoke
 
-    Set Selenium Implicit Wait    10
     Open Browser  ${URL}  ${browser}
     Maximize Browser Window
     Enter Username      ${username}
