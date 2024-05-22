@@ -23,7 +23,7 @@ jobs:
             pip install --upgrade pip
             pip install -r requirements.txt
         - name: Run Test
-          run: python -m robot --variable headlesschrome --outputdir results ./Tests
+          run: python -m robot --variable BROWSER:headlesschrome --outputdir results ./Tests
         - name: Run Robot Framework tests and generate report
           run: |
              echo "ROBOT_RC=$?" >> "$GITHUB_ENV"
