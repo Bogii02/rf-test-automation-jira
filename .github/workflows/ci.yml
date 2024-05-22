@@ -10,6 +10,10 @@ on:
 jobs:
     Run-Test:
       runs-on: ubuntu-20.04
+      env:
+        SITE_URL: ${{ secrets.SITE_URL }}
+        JIRA_USERNAME: ${{ secrets.JIRA_USERNAME }}
+        JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
       steps:
         - name: Checkout repository
           uses: actions/checkout@v1
