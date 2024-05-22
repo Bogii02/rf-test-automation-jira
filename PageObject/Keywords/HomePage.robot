@@ -13,7 +13,8 @@ Click On User Menu
 
 Click Log Out Button
     Wait Until Element Is Visible    ${LogoutButton}    timeout=5
-    Click Button    ${LogoutButton}
+    Click Element   ${LogoutButton}
 
 Check Log In Button is Displayed
-    Element Should Be Visible    ${LoginButton}
+    Wait Until Element Is Visible       ${LoginAgainButton}
+    Element Should Be Visible       ${LoginAgainButton}

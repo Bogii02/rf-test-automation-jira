@@ -7,4 +7,5 @@ ErrorMessage = "xpath://*[@id='login-form']/div[1]/div[1]/p"
 # Home Page locators
 IntroductionPanel = "id:rep-10000"
 UserMenu = "id:header-details-user-fullname"
+LoginAgainButton = "xpath://*[@id='main']/div/div/p[2]/a"
 LogoutButton = "id:system"
