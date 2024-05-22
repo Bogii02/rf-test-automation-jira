@@ -18,5 +18,9 @@ Enter Password
     Wait Until Element Is Visible  ${LoginPasswordInputBox}  timeout=5
     Input Text  ${LoginPasswordInputBox}  ${password}
 
-Click Login
+Click Log in Button
     Click Element   ${LoginButton}
+
+Check error message is visible
+    Wait Until Element Is Visible    ${ErrorMessage}
+    Element Should Be Visible    ${ErrorMessage}
