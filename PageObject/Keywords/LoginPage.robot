@@ -10,12 +10,12 @@ Opening browser
 
 Enter username
     [Arguments]     ${username}
-    Wait Until Element Is Visible  ${LoginUsernameInputBox}  timeout=5
+    Wait Until Element Is Visible  ${LoginUsernameInputBox}
     Input Text  ${LoginUsernameInputBox}  ${username}
 
 Enter Password
     [Arguments]     ${password}
-    Wait Until Element Is Visible  ${LoginPasswordInputBox}  timeout=5
+    Wait Until Element Is Visible  ${LoginPasswordInputBox}
     Input Text  ${LoginPasswordInputBox}  ${password}
 
 Click Log in Button
