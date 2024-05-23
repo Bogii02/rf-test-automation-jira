@@ -18,3 +18,6 @@ Click Log Out Button
 Check Log In Button is Displayed
     Wait Until Element Is Visible       ${LoginAgainButton}
     Element Should Be Visible       ${LoginAgainButton}
+
+Click Create Button
+    Click Element        ${CreateButton}
