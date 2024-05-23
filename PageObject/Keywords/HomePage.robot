@@ -8,11 +8,11 @@ Get Displayed Username
     RETURN      ${username}
 
 Click On User Menu
-    Wait Until Element Is Visible    ${UserMenu}     timeout=5
+    Wait Until Element Is Visible    ${UserMenu}
     Click Element    ${UserMenu}
 
 Click Log Out Button
-    Wait Until Element Is Visible    ${LogoutButton}    timeout=5
+    Wait Until Element Is Visible    ${LogoutButton}
     Click Element   ${LogoutButton}
 
 Check Log In Button is Displayed
